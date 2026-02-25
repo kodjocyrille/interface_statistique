@@ -26,6 +26,633 @@
                     "name": "TGI Lomé",
                     "tables": [
                         {
+                            "id": "pv-parquet-lome",
+                            "departmentId": "parquet",
+                            "title": "Tableau 1 : Nombre de PV reçus et autres actes de saisine du parquet au cours de la période",
+                            "columns": [
+                                "Indicateur",
+                                "Valeur"
+                            ],
+                            "data": [
+                                {
+                                    "indicateur": "PV d'arrestation",
+                                    "valeur": 276,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "indicateur": "PV de renseignement judiciaire",
+                                    "valeur": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "indicateur": "PV d'accident",
+                                    "valeur": 73,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "indicateur": "Autres PV",
+                                    "valeur": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "indicateur": "Nombre total de plaintes reçues par le parquet au cours de la période",
+                                    "valeur": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "indicateur": "Nombre total de dénonciations reçues par le parquet au cours de la période",
+                                    "valeur": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "indicateur": "Nombre total de citations directes reçues par le parquet au cours de la période",
+                                    "valeur": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "indicateur": "Nombre d'affaires enrôlées au cours de la période",
+                                    "valeur": 349,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "indicateur": "Nombre d'affaires en cours (Fin de la période)",
+                                    "valeur": 349,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "indicateur": "Autres actes de saisine du parquet",
+                                    "valeur": 0,
+                                    "year": "Janvier 2026"
+                                }
+                            ],
+                            "chartConfig": {
+                                "xAxis": "year",
+                                "lines": [
+                                    {
+                                        "key": "valeur",
+                                        "name": "Nombre d'actes",
+                                        "color": "#2563eb"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "infractions-parquet-lome",
+                            "departmentId": "parquet",
+                            "title": "Tableau 2 : INFRACTIONS et SUITES DONNÉES (PV)",
+                            "columns": [
+                                "Infractions",
+                                "Flagrant délit (SD1)",
+                                "Citation directe (SD2)",
+                                "Information Juge instruction",
+                                "Information Juge des enfants",
+                                "Classements sans suites",
+                                "TOTAL"
+                            ],
+                            "data": [
+                                {
+                                    "Infractions": "Vol",
+                                    "Flagrant délit (SD1)": 34,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 3,
+                                    "Information Juge des enfants": 4,
+                                    "Classements sans suites": 5,
+                                    "TOTAL": 46,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Recel",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Groupement de malfaiteurs",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 1,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 1,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Escroquerie, abus de confiance, abus de biens sociaux",
+                                    "Flagrant délit (SD1)": 2,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 1,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 1,
+                                    "TOTAL": 4,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Escroquerie",
+                                    "Flagrant délit (SD1)": 1,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 3,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 5,
+                                    "TOTAL": 9,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Abus de confiance",
+                                    "Flagrant délit (SD1)": 5,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 4,
+                                    "Information Juge des enfants": 1,
+                                    "Classements sans suites": 11,
+                                    "TOTAL": 21,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Abus de biens sociaux",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Infraction à la législation sur les stupéfiants",
+                                    "Flagrant délit (SD1)": 7,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 3,
+                                    "Information Juge des enfants": 1,
+                                    "Classements sans suites": 1,
+                                    "TOTAL": 12,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Homicide ou blessures involontaires",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Violences volontaires",
+                                    "Flagrant délit (SD1)": 2,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 2,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Tortures",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Mauvais traitements",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Homicide volontaire (meurtres et assassinats)",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 1,
+                                    "Information Juge des enfants": 1,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 2,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Attentat à la pudeur",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Viol sur majeur",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Viol sur mineurs",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 1,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 1,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Pédophilie",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 1,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 1,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Traites des personnes majeures",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 2,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 2,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Traites des personnes mineures",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Trafic illicite de migrants",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Violences faites aux femmes",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Relation sexuelle suivie avec une élève / apprentie",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 1,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 1,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Mise en enceinte d'une élève/ Apprenti",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Cybercriminalité",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Piraterie maritime",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Faux et/ ou usage de faux",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Entrave à la justice",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 1,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 1,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Terrorisme",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Blanchiment de capitaux",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Corruption",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Destruction volontaire",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Diffamation",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 1,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 1,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Menace de mort",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Occupation frauduleuse",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Rébellion",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Détention et trafic de carburant",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Violences volontaires par pratiques de mutilations génitales",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Violences faites aux femmes (sur femme enceinte, mariage forcé, rites inhumains...)",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Violences faites aux enfants",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Infanticides",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Injures compotant un terme de mépris (art 298)",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Discrimination en matière d’emploi (art 307)",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Discrimination à l’égard des femmes (art 301)",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Discrimination ou stigmatisation liée au VIH (art 304)",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Refus de payer la pension alimentaire (art 381)",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Abus sexuel",
+                                    "Flagrant délit (SD1)": 3,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 1,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 4,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Harcèlement sexuel (art 399)",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Enlèvement et détournement des mineurs",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 1,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 1,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Racolage (art 397)",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Proxénétisme (art 401)",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Homicide involontaires",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 0,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 3,
+                                    "TOTAL": 3,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Blessures involontaires",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 2,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 2,
+                                    "TOTAL": 4,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "Autres infractions",
+                                    "Flagrant délit (SD1)": 0,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 1,
+                                    "Information Juge des enfants": 0,
+                                    "Classements sans suites": 0,
+                                    "TOTAL": 1,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infractions": "TOTAL",
+                                    "Flagrant délit (SD1)": 54,
+                                    "Citation directe (SD2)": 0,
+                                    "Information Juge instruction": 23,
+                                    "Information Juge des enfants": 9,
+                                    "Classements sans suites": 23,
+                                    "TOTAL": 109,
+                                    "year": "Janvier 2026"
+                                }
+                            ]
+                        },
+                        {
                             "id": "stats-enfants-lome",
                             "departmentId": "enfants",
                             "title": "Tableau 21: Affaires pénales instruites au cours de la période",
@@ -424,7 +1051,7 @@
                 {
                     "id": "ticc-tabligbo",
                     "type": "TICC",
-                    "name": "TICC Tabligbo",
+                    "name": "TICC  Tabligbo",
                     "tables": []
                 }
             ]
