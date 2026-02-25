@@ -51,7 +51,7 @@ export function JusticeCharts({ data }: { data: AccessJusticeStats }) {
                     </CardHeader>
                     <CardContent>
                         <div className="h-[250px] w-full relative">
-                            <ResponsiveContainer width="100%" height="100%">
+                            <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                                 <PieChart>
                                     <Pie
                                         data={ratioData}
@@ -88,7 +88,7 @@ export function JusticeCharts({ data }: { data: AccessJusticeStats }) {
                     </CardHeader>
                     <CardContent>
                         <div className="h-[250px] w-full">
-                            <ResponsiveContainer width="100%" height="100%">
+                            <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                                 <PieChart>
                                     <Pie
                                         data={genderData}
@@ -120,7 +120,7 @@ export function JusticeCharts({ data }: { data: AccessJusticeStats }) {
                     </CardHeader>
                     <CardContent>
                         <div className="h-[250px] w-full mt-4">
-                            <ResponsiveContainer width="100%" height="100%">
+                            <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                                 <BarChart data={data.historicalGrowth}>
                                     <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
                                     <XAxis dataKey="year" axisLine={false} tickLine={false} tick={{ fontSize: 11, fontWeight: 700 }} />
@@ -142,7 +142,7 @@ export function JusticeCharts({ data }: { data: AccessJusticeStats }) {
                 </CardHeader>
                 <CardContent>
                     <div className="h-[300px] w-full mt-4">
-                        <ResponsiveContainer width="100%" height="100%">
+                        <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                             <BarChart layout="vertical" data={localizedUsage} margin={{ left: 40 }}>
                                 <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="#f1f5f9" />
                                 <XAxis type="number" hide />

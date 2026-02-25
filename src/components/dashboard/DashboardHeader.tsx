@@ -1,6 +1,8 @@
+
 "use client"
 
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams, usePathname } from "next/navigation";
+import Link from "next/link";
 import {
     Select,
     SelectContent,
@@ -9,72 +11,70 @@ import {
     SelectValue,
 } from "@/components/ui/select";
 import { Region, Year } from "@/lib/types";
-import { Badge } from "@/components/ui/badge";
-import { SidebarTrigger } from "@/components/ui/sidebar";
 import { Separator } from "@/components/ui/separator";
+import { cn } from "@/lib/utils";
 
 export function DashboardHeader() {
     const router = useRouter();
     const searchParams = useSearchParams();
+    const pathname = usePathname();
 
-    const currentRegion = (searchParams.get("region") as Region) || "National";
-    const currentYear = (searchParams.get("year") as Year) || "2024";
+    const currentYear = (searchParams.get("year") as Year) || "2026";
 
     const updateFilters = (key: string, value: string) => {
         const params = new URLSearchParams(searchParams.toString());
         params.set(key, value);
-        router.push(`?${params.toString()}`);
+        router.push(`${pathname}?${params.toString()}`);
     };
 
-    return (
-        <header className="sticky top-0 z-30 flex h-20 shrink-0 items-center border-b bg-white/95 dark:bg-slate-900/95 px-6 backdrop-blur-md shadow-sm">
-            <div className="flex w-full items-center justify-between">
-                <div className="flex items-center gap-6">
-                    <SidebarTrigger className="md:hidden" />
-                    <Separator orientation="vertical" className="h-8 md:hidden" />
+    const navItems = [
+        { name: "Global", href: "/" },
+        { name: "Juridictions", href: "/jurisdictions" },
+        { name: "Pénitentiaire", href: "/penitentiary" },
+        { name: "Accès Justice", href: "/access-justice" },
+    ];
 
+    return (
+        <header className="sticky top-0 z-40 flex h-16 shrink-0 items-center border-b bg-white dark:bg-slate-950 px-8 shadow-sm">
+            <div className="flex w-full items-center justify-between">
+                <div className="flex items-center gap-12">
                     <div className="flex flex-col">
-                        <div className="flex items-center gap-2">
-                            <span className="text-[9px] font-black tracking-[0.2em] text-primary uppercase">Ministère de la Justice</span>
-                            <div className="w-1 h-1 bg-slate-300 rounded-full" />
-                            <span className="text-[9px] font-bold text-slate-400 uppercase tracking-widest">République Togolaise</span>
-                        </div>
-                        <h1 className="text-lg font-black tracking-tight text-slate-900 dark:text-slate-100 italic-sans mt-0.5">
-                            StatJustice <span className="text-primary">Togo</span>
+                        <span className="text-[8px] font-black tracking-[0.3em] text-slate-400 uppercase leading-none">Ministère de la Justice</span>
+                        <h1 className="text-sm font-black tracking-tighter text-slate-950 dark:text-slate-100 mt-1 uppercase">
+                            StatJustice <span className="text-primary/40">Togo</span>
                         </h1>
-                        <span className="text-[8px] font-medium text-muted-foreground uppercase tracking-widest leading-none">Service de l'Information et des Statistiques</span>
                     </div>
+
+                    <nav className="hidden lg:flex items-center gap-1">
+                        {navItems.map((item) => (
+                            <Link
+                                key={item.href}
+                                href={item.href}
+                                className={cn(
+                                    "px-4 py-1.5 text-[10px] font-black uppercase tracking-widest transition-all",
+                                    pathname === item.href
+                                        ? "bg-slate-100 text-[#0a192f] border-b-2 border-[#0a192f]"
+                                        : "text-slate-500 hover:text-[#0a192f] hover:bg-slate-50"
+                                )}
+                            >
+                                {item.name}
+                            </Link>
+                        ))}
+                    </nav>
                 </div>
 
-                <div className="flex items-center gap-4 ml-6">
-                    <div className="flex items-center gap-2">
-                        <span className="text-[10px] font-black text-muted-foreground uppercase tracking-widest">Année</span>
+                <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-3 px-4 py-1.5 border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900">
+                        <span className="text-[9px] font-bold text-slate-500 uppercase tracking-widest">Période d'analyse</span>
                         <Select value={currentYear} onValueChange={(val) => updateFilters("year", val)}>
-                            <SelectTrigger className="w-[100px] h-8 text-[11px] font-bold border-none shadow-none bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 focus:ring-1">
+                            <SelectTrigger className="w-[80px] h-6 text-[10px] font-bold border-none shadow-none bg-transparent">
                                 <SelectValue placeholder="Année" />
                             </SelectTrigger>
-                            <SelectContent>
-                                <SelectItem value="2025">2025</SelectItem>
-                                <SelectItem value="2024">2024</SelectItem>
-                                <SelectItem value="2023">2023</SelectItem>
-                                <SelectItem value="2022">2022</SelectItem>
-                            </SelectContent>
-                        </Select>
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                        <span className="text-[10px] font-black text-muted-foreground uppercase tracking-widest">Région</span>
-                        <Select value={currentRegion} onValueChange={(val) => updateFilters("region", val)}>
-                            <SelectTrigger className="w-[140px] h-8 text-[11px] font-bold border-none shadow-none bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 focus:ring-1">
-                                <SelectValue placeholder="Région" />
-                            </SelectTrigger>
-                            <SelectContent>
-                                <SelectItem value="National">National (Togo)</SelectItem>
-                                <SelectItem value="Maritime">Région Maritime</SelectItem>
-                                <SelectItem value="Plateaux">Région des Plateaux</SelectItem>
-                                <SelectItem value="Centrale">Région Centrale</SelectItem>
-                                <SelectItem value="Kara">Région de la Kara</SelectItem>
-                                <SelectItem value="Savanes">Région des Savanes</SelectItem>
+                            <SelectContent className="rounded-none">
+                                <SelectItem value="2026" className="text-[10px]">2026</SelectItem>
+                                <SelectItem value="2025" className="text-[10px]">2025</SelectItem>
+                                <SelectItem value="2024" className="text-[10px]">2024</SelectItem>
+                                <SelectItem value="2023" className="text-[10px]">2023</SelectItem>
                             </SelectContent>
                         </Select>
                     </div>

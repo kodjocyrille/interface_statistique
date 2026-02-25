@@ -33,7 +33,7 @@ export function JudicialCharts({ data }: { data: JudicialActivityStats }) {
                 </CardHeader>
                 <CardContent>
                     <div className="h-[350px] w-full mt-4">
-                        <ResponsiveContainer width="100%" height="100%">
+                        <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                             <LineChart data={data.monthlyTrends} margin={{ top: 5, right: 30, left: 0, bottom: 5 }}>
                                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
                                 <XAxis
@@ -88,7 +88,7 @@ export function JudicialCharts({ data }: { data: JudicialActivityStats }) {
                 </CardHeader>
                 <CardContent>
                     <div className="h-[350px] w-full mt-4 flex items-center justify-center">
-                        <ResponsiveContainer width="100%" height="100%">
+                        <ResponsiveContainer width="100%" height="100%" minWidth={0}>
                             <PieChart>
                                 <Pie
                                     data={pieData}

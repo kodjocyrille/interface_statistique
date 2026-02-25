@@ -1,0 +1,551 @@
+{
+    "categories": [
+        {
+            "name": "Haute Juridiction",
+            "jurisdictions": [
+                {
+                    "id": "supreme-togo",
+                    "type": "SUPREME",
+                    "name": "Cour Suprême du Togo",
+                    "tables": []
+                }
+            ]
+        },
+        {
+            "name": "Ressort de la Cour d'Appel de Lomé",
+            "jurisdictions": [
+                {
+                    "id": "ca-lome-siege",
+                    "type": "CA",
+                    "name": "Cour d'Appel de Lomé",
+                    "tables": []
+                },
+                {
+                    "id": "tgi-lome",
+                    "type": "TGI",
+                    "name": "TGI Lomé",
+                    "tables": [
+                        {
+                            "id": "stats-enfants-lome",
+                            "departmentId": "enfants",
+                            "title": "Tableau 21: Affaires pénales instruites au cours de la période",
+                            "columns": [
+                                "Indicateur",
+                                "Valeur"
+                            ],
+                            "data": [
+                                {
+                                    "indicateur": "Stock de toutes les affaires (début de la période)",
+                                    "valeur": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "indicateur": "Nombre d'informations ouvertes au cours de la période",
+                                    "valeur": 39,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "indicateur": "Nombre de dossiers reçus pour homologation du PV de médiation pénale",
+                                    "valeur": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "indicateur": "Nombre d'affaires définitivement réglées au cours de la période y compris règlements d'années précédentes",
+                                    "valeur": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "indicateur": "Stock de toutes les affaires en cours y compris les années précédentes",
+                                    "valeur": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "indicateur": "Parmi le stock ci-dessus, nombre d'affaires transmises au Parquet",
+                                    "valeur": 0,
+                                    "year": "Janvier 2026"
+                                }
+                            ],
+                            "chartConfig": {
+                                "xAxis": "year",
+                                "lines": [
+                                    {
+                                        "key": "valeur",
+                                        "name": "Nombre de dossiers",
+                                        "color": "#1e293b"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "decisions-enfants-lome",
+                            "departmentId": "enfants",
+                            "title": "Tableau 22:Décisions mettant fin à la procédure suivie au cabinet du juge des enfants",
+                            "columns": [
+                                "Indicateur",
+                                "Valeur"
+                            ],
+                            "data": [
+                                {
+                                    "indicateur": "Nombre d'ordonnance de renvoi devant l'audience du juge pour enfant",
+                                    "valeur": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "indicateur": "Nombre d'ordonnance de renvoi devant le Tribunal pour enfants",
+                                    "valeur": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "indicateur": "Nombre d'ordonnance de classement",
+                                    "valeur": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "indicateur": "Nombre de jugements rendus par le juge pour enfants",
+                                    "valeur": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "indicateur": "Nombre de jugements rendus par le tribunal pour enfants",
+                                    "valeur": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "indicateur": "Autres sorties du cabinet (refus d'informer, dessaisissement, incompétence, radiation, etc.)",
+                                    "valeur": 0,
+                                    "year": "Janvier 2026"
+                                }
+                            ],
+                            "chartConfig": {
+                                "xAxis": "year",
+                                "lines": [
+                                    {
+                                        "key": "valeur",
+                                        "name": "Décisions",
+                                        "color": "#0a192f"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "detenus-instruction-lome",
+                            "departmentId": "enfants",
+                            "title": "Tableau 23: Nombre de détenus en cours d'instruction",
+                            "columns": [
+                                "Sexe",
+                                "15 ans",
+                                "16 ans",
+                                "17 ans",
+                                "Total"
+                            ],
+                            "data": [
+                                {
+                                    "Sexe": "Garçons",
+                                    "15 ans": 9,
+                                    "16 ans": 9,
+                                    "17 ans": 15,
+                                    "Total": 33,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Sexe": "Filles",
+                                    "15 ans": 1,
+                                    "16 ans": 0,
+                                    "17 ans": 0,
+                                    "Total": 1,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Sexe": "Total",
+                                    "15 ans": 10,
+                                    "16 ans": 9,
+                                    "17 ans": 15,
+                                    "Total": 34,
+                                    "year": "Janvier 2026"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "mesures-ordonnances-lome",
+                            "departmentId": "enfants",
+                            "title": "Tableau 24: MESURES ET ORDONNANCES DE GARDE / PLACEMENT",
+                            "columns": [
+                                "Indicateur",
+                                "Valeur"
+                            ],
+                            "data": [
+                                {
+                                    "indicateur": "Ordonnances de garde provisoire",
+                                    "valeur": 35,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "indicateur": "Ordonnances de remises aux parents ou à des personnes proches",
+                                    "valeur": 4,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "indicateur": "Ordonnances de placement dans des institutions ou établissements spécialisés",
+                                    "valeur": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "indicateur": "Autres mesures",
+                                    "valeur": 0,
+                                    "year": "Janvier 2026"
+                                }
+                            ],
+                            "chartConfig": {
+                                "xAxis": "year",
+                                "lines": [
+                                    {
+                                        "key": "valeur",
+                                        "name": "Mesures",
+                                        "color": "#10b981"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "nature-infractions-lome",
+                            "departmentId": "enfants",
+                            "title": "Tableau 25: NATURE DES INFRACTIONS ET JUGEMENTS RENDUS",
+                            "columns": [
+                                "Infraction",
+                                "Juge des Enfants",
+                                "Tribunal pour Enfants",
+                                "Total "
+                            ],
+                            "data": [
+                                {
+                                    "Infraction": "Vol",
+                                    "Juge des Enfants": 0,
+                                    "Tribunal pour Enfants": 0,
+                                    "Total ": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infraction": "Groupement de malfaiteurs",
+                                    "Juge des Enfants": 0,
+                                    "Tribunal pour Enfants": 0,
+                                    "Total ": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infraction": "Abus de confiance",
+                                    "Juge des Enfants": 0,
+                                    "Tribunal pour Enfants": 0,
+                                    "Total ": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infraction": "Escroquerie",
+                                    "Juge des Enfants": 0,
+                                    "Tribunal pour Enfants": 0,
+                                    "Total ": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infraction": "Recel",
+                                    "Juge des Enfants": 0,
+                                    "Tribunal pour Enfants": 0,
+                                    "Total ": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infraction": "Infraction à la législation sur les stupéfiants",
+                                    "Juge des Enfants": 0,
+                                    "Tribunal pour Enfants": 0,
+                                    "Total ": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infraction": "Homicide ou blessures involontaires",
+                                    "Juge des Enfants": 0,
+                                    "Tribunal pour Enfants": 0,
+                                    "Total ": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infraction": "Violences volontaires",
+                                    "Juge des Enfants": 0,
+                                    "Tribunal pour Enfants": 0,
+                                    "Total ": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infraction": "Homicide volontaire (meurtres et assassinats)",
+                                    "Juge des Enfants": 0,
+                                    "Tribunal pour Enfants": 0,
+                                    "Total ": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infraction": "Attentat à la pudeur",
+                                    "Juge des Enfants": 0,
+                                    "Tribunal pour Enfants": 0,
+                                    "Total ": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infraction": "Viol",
+                                    "Juge des Enfants": 0,
+                                    "Tribunal pour Enfants": 0,
+                                    "Total ": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infraction": "Autres infractions",
+                                    "Juge des Enfants": 0,
+                                    "Tribunal pour Enfants": 0,
+                                    "Total ": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "Infraction": "TOTAL",
+                                    "Juge des Enfants": 0,
+                                    "Tribunal pour Enfants": 0,
+                                    "Total ": 0,
+                                    "year": "Janvier 2026"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "affaires-civiles-lome",
+                            "departmentId": "enfants",
+                            "title": "Tableau 26: RÉPARTITION DES AFFAIRES CIVILES CHEZ LES MINEURS",
+                            "columns": [
+                                "Indicateur",
+                                "Valeur"
+                            ],
+                            "data": [
+                                {
+                                    "indicateur": "Le stock initial (début de la période)",
+                                    "valeur": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "indicateur": "Nombre de jugements rendus en matière civile",
+                                    "valeur": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "indicateur": "Nombre d'ordonnances rendues en matière civile",
+                                    "valeur": 0,
+                                    "year": "Janvier 2026"
+                                },
+                                {
+                                    "indicateur": "Le stock (fin de la période)",
+                                    "valeur": 0,
+                                    "year": "Janvier 2026"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "tgi-atakpame",
+                    "type": "TGI",
+                    "name": "TGI Atakpamé",
+                    "tables": []
+                },
+                {
+                    "id": "ticcc-tsevie",
+                    "type": "TICCC",
+                    "name": "TICCC Tsévié",
+                    "tables": []
+                },
+                {
+                    "id": "ticcc-aneho",
+                    "type": "TICCC",
+                    "name": "TICCC Anèho",
+                    "tables": []
+                },
+                {
+                    "id": "ticcc-vogan",
+                    "type": "TICCC",
+                    "name": "TICCC Vogan",
+                    "tables": []
+                },
+                {
+                    "id": "ticcc-notse",
+                    "type": "TICCC",
+                    "name": "TICCC Notsè",
+                    "tables": []
+                },
+                {
+                    "id": "ticcc-kpalime",
+                    "type": "TICCC",
+                    "name": "TICCC Kpalimé",
+                    "tables": []
+                },
+                {
+                    "id": "ticc-keve",
+                    "type": "TICC",
+                    "name": "TICC Kévé",
+                    "tables": []
+                },
+                {
+                    "id": "ticc-danyi",
+                    "type": "TICC",
+                    "name": "TICC Danyi",
+                    "tables": []
+                },
+                {
+                    "id": "ticc-agou",
+                    "type": "TICC",
+                    "name": "TICC Agou",
+                    "tables": []
+                },
+                {
+                    "id": "ticc-amlame",
+                    "type": "TICC",
+                    "name": "TICC Amlamé",
+                    "tables": []
+                },
+                {
+                    "id": "ticc-badou",
+                    "type": "TICC",
+                    "name": "TICC Badou",
+                    "tables": []
+                },
+                {
+                    "id": "ticc-elavagnon",
+                    "type": "TICC",
+                    "name": "TICC Elavagnon",
+                    "tables": []
+                },
+                {
+                    "id": "ticc-tohoun",
+                    "type": "TICC",
+                    "name": "TICC Tohoun",
+                    "tables": []
+                },
+                {
+                    "id": "ticc-tabligbo",
+                    "type": "TICC",
+                    "name": "TICC Tabligbo",
+                    "tables": []
+                }
+            ]
+        },
+        {
+            "name": "Ressort de la Cour d'Appel de Kara",
+            "jurisdictions": [
+                {
+                    "id": "ca-kara-siege",
+                    "type": "CA",
+                    "name": "Cour d'Appel de Kara",
+                    "tables": []
+                },
+                {
+                    "id": "tgi-sokode",
+                    "type": "TGI",
+                    "name": "TGI Sokodé",
+                    "tables": []
+                },
+                {
+                    "id": "tgi-kara",
+                    "type": "TGI",
+                    "name": "TGI Kara",
+                    "tables": []
+                },
+                {
+                    "id": "tgi-dapaong",
+                    "type": "TGI",
+                    "name": "TGI Dapaong",
+                    "tables": []
+                },
+                {
+                    "id": "ticcc-sotouboua",
+                    "type": "TICCC",
+                    "name": "TICCC Sotouboua",
+                    "tables": []
+                },
+                {
+                    "id": "ticcc-bassar",
+                    "type": "TICCC",
+                    "name": "TICCC Bassar",
+                    "tables": []
+                },
+                {
+                    "id": "ticcc-kante",
+                    "type": "TICCC",
+                    "name": "TICCC Kanté",
+                    "tables": []
+                },
+                {
+                    "id": "ticcc-mango",
+                    "type": "TICCC",
+                    "name": "TICCC Mango",
+                    "tables": []
+                },
+                {
+                    "id": "ticc-blitta",
+                    "type": "TICC",
+                    "name": "TICC Blitta",
+                    "tables": []
+                },
+                {
+                    "id": "ticc-tchamba",
+                    "type": "TICC",
+                    "name": "TICC Tchamba",
+                    "tables": []
+                },
+                {
+                    "id": "ticc-bafilo",
+                    "type": "TICC",
+                    "name": "TICC Bafilo",
+                    "tables": []
+                },
+                {
+                    "id": "ticc-guerin-kouka",
+                    "type": "TICC",
+                    "name": "TICC Guérin-kouka",
+                    "tables": []
+                },
+                {
+                    "id": "ticc-pagouda",
+                    "type": "TICC",
+                    "name": "TICC Pagouda",
+                    "tables": []
+                },
+                {
+                    "id": "ticc-doufelgou",
+                    "type": "TICC",
+                    "name": "TICC Doufelgou",
+                    "tables": []
+                },
+                {
+                    "id": "ticc-tandjouare",
+                    "type": "TICC",
+                    "name": "TICC Tandjouaré",
+                    "tables": []
+                },
+                {
+                    "id": "ticc-mandouri",
+                    "type": "TICC",
+                    "name": "TICC Mandouri",
+                    "tables": []
+                }
+            ]
+        },
+        {
+            "name": "Juridictions Spécialisées",
+            "jurisdictions": [
+                {
+                    "id": "tt-lome",
+                    "type": "SPECIAL",
+                    "name": "Tribunal du Travail de Lomé",
+                    "tables": []
+                },
+                {
+                    "id": "tc-lome",
+                    "type": "SPECIAL",
+                    "name": "Tribunal de Commerce de Lomé",
+                    "tables": []
+                }
+            ]
+        }
+    ]
+}
